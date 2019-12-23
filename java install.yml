@@ -1,0 +1,11 @@
+---
+- gather_facts: false
+  hosts: localhost
+  vars_files:
+    - Inventory_.yml
+    
+  tasks:
+  
+    - name: install java 8
+      apt: name=oracle-java8-installer state=latest update-cache=yes force=yes
+      sudo: yes

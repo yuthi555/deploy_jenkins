@@ -2,7 +2,7 @@
 - gather_facts: false
   hosts: localhost
   vars_files:
-    - Inventory_.yml
+    - Inventory.yml
     
   tasks:
   
